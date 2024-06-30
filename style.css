@@ -15,9 +15,12 @@ body{
 }
 .info{
     padding: 50px;
+    width: 450px;
+    height: 370px;
 }
 
 .title{
+    
     font-family: "Lexend Deca";
     font-size: 30px;
     color: #ffffff;
@@ -56,25 +59,31 @@ body{
     color: #8c8aa1;
     font-size: 12px;
 }
-.pic{
+.pic {
     width: 450px;
     height: 370px;
-    position:relative;   
+    position: relative;   
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    overflow: hidden; /* Ensures the overlay stays within the bounds */
 }
-.pic img{
+
+.pic img {
     width: 450px;
     height: 370px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     display: block;
 }
-.effect{
-    width: 450px;
-    height: 370px;
+
+.effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #7f43a3;
-    
+    opacity: 0.5;
 }
